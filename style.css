@@ -132,7 +132,7 @@ body {
 .photo-placeholder {
     width: 280px;
     height: 380px;
-    background: url('img/IMG_4538.JPG') no-repeat center/cover;
+    background: url('img/IMG.jpg') no-repeat center/cover;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(255, 76, 96, 0.3);
 }
@@ -152,6 +152,48 @@ body {
     color: #ff4c60;
     margin-bottom: 2rem;
 }
+
+.section.dark {
+    background-color: #0e1126;
+    /* warna elegan seperti section lain */
+    text-align: center;
+    padding: 5rem 8%;
+    color: #f2f2f2;
+}
+
+.contact-info {
+    margin-top: 1.5rem;
+    color: #d4d4d4;
+    line-height: 1.8;
+}
+
+.contact-info a {
+    color: #ff4c60;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #ffffff;
+}
+
+.btn-primary {
+    display: inline-block;
+    margin-top: 2rem;
+    background-color: #ff4c60;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: #ff6b80;
+    box-shadow: 0 0 10px rgba(255, 76, 96, 0.4);
+}
+
 
 /* About */
 .about-container {
@@ -259,6 +301,7 @@ body {
     background-color: #ff6c7b;
 }
 
+
 /* Footer */
 footer {
     text-align: center;
@@ -266,6 +309,32 @@ footer {
     background-color: #0b0d1c;
     color: #777;
 }
+
+.contact-social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.contact-social a {
+    color: #ff4c60;
+    border: 1px solid #ff4c60;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.contact-social a:hover {
+    background-color: #ff4c60;
+    color: #0e1126;
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
