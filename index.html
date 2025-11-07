@@ -3,76 +3,142 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portofolio Muhamad Syaripudin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Muhamad Syaripudin</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
+    <!-- Navbar -->
     <header>
-        <h1>wkwkwk</h1>
-        <div class="container">
-            <img src="img/IMG_4538.JPG" alt="Foto Profil" class="profile-img">
-            <h1>Muhamad Syaripudin</h1>
-            <p>Mahasiswa Teknik Informatika | Wakil Ketua BEM FIKI</p>
-            <div class="social-links">
-                <a href="https://github.com/MuhamadSyaripudin" target="_blank">GitHub</a>
-                <a href="www.linkedin.com/in/muhamad-syaripudin-833264290" target="_blank">LinkedIn</a>
-            </div>
-        </div>
+        <nav class="navbar">
+            <div class="logo">M SYARIPUDIN<span>.</span></div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#skills">Keterampilan</a></li>
+                <li><a href="#certificates">Sertifikat</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        </nav>
     </header>
 
-    <section class="about">
-        <div class="container">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-left">
+            <h5>SELAMAT DATANG!</h5>
+            <h1>Saya <span>Muhamad Syaripudin</span></h1>
+            <h2>Mahasiswa & Pengembang Aplikasi</h2>
+            <p>
+                Saya seorang pengembang muda yang bersemangat di bidang teknologi.
+                Fokus saya adalah membangun aplikasi modern, bermanfaat, dan berdampak.
+            </p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="photo-placeholder">
+                <!-- Ganti gambar di CSS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="about-container">
             <h2>Tentang Saya</h2>
-            <p>Saya adalah mahasiswa semester 6 jurusan Teknik Informatika yang aktif dalam organisasi kemahasiswaan.
-                Saya memegang jabatan sebagai
-                wakil ketua BEM FIKI di salah satu universitas swasta di Bandung.
-                Saya memiliki ketertarikan dalam pengembangan aplikasi mobile, AI, dan analisis data.</p>
+            <p>
+                Saya <strong>Muhamad Syaripudin</strong>, mahasiswa Teknik Informatika dengan fokus pada pengembangan
+                aplikasi berbasis web dan Android.
+                Saya tertarik pada teknologi AI dan desain antarmuka yang efisien.
+            </p>
+            <p>
+                <strong>Latar Belakang:</strong><br>
+                - Pendidikan: S1 Teknik Informatika<br>
+                - Pengalaman: Pengembang aplikasi Android, proyek AI, dan web development<br>
+                - Organisasi: Wakil Ketua BEM Fakultas Informatika<br>
+                - Penghargaan: Finalis Hackathon Kampus Merdeka 2024
+            </p>
         </div>
     </section>
 
-    <section class="portfolio">
-        <div class="container">
-            <h2>Proyek Portofolio</h2>
-            <ul>
-                <li>
-                    <h3>Aplikasi Data Mahasiswa</h3>
-                    <p>Android app untuk input dan manajemen data mahasiswa berbasis SQLite & Firebase.</p>
-                </li>
-                <li>
-                    <h3>Analisis Sentimen Kebijakan Pendidikan</h3>
-                    <p>Proyek akhir menggunakan Support Vector Machine untuk klasifikasi opini dari media sosial.</p>
-                </li>
-            </ul>
+    <!-- Projects Section -->
+    <section id="projects" class="section dark">
+        <h2>Proyek</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="img/.JPG" alt="Proyek 1">
+                <h3>Chatbot Deteksi Mental Health</h3>
+                <p>Menggunakan NLP untuk menganalisis teks pengguna dan memberikan hasil analisis emosi awal.</p>
+            </div>
+            <div class="project-card">
+                <img src="img/proyek2.jpg" alt="Proyek 2">
+                <h3>Mini Photoshop (OpenCV)</h3>
+                <p>Aplikasi desktop berbasis C++ dengan fitur pengolahan citra digital (27 fungsi utama).</p>
+            </div>
+            <div class="project-card">
+                <img src="img/proyek3.jpg" alt="Proyek 3">
+                <h3>Website Informasi Mahasiswa</h3>
+                <p>Website dinamis berbasis PHP dan MySQL dengan sistem login dan pengelolaan data interaktif.</p>
+            </div>
         </div>
     </section>
 
-    <section class="contact">
-        <div class="container">
-            <h2>Hubungi Saya</h2>
-            <form action="#" method="POST">
-                <label for="name">Nama:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Pesan:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <button type="submit">Kirim Pesan</button>
-            </form>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Keterampilan</h2>
+        <div class="skills-container">
+            <div class="skill-card">HTML / CSS / JavaScript</div>
+            <div class="skill-card">PHP & MySQL</div>
+            <div class="skill-card">C++ & OpenCV</div>
+            <div class="skill-card">Python (AI & NLP)</div>
+            <div class="skill-card">Git / Figma / Canva</div>
         </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="section dark">
+        <h2>Sertifikat</h2>
+        <div class="certificates-container">
+            <div class="certificate-card">
+                <img src="img/sertifikat1.jpg" alt="Sertifikat 1">
+                <p>Machine Learning Fundamentals</p>
+            </div>
+            <div class="certificate-card">
+                <img src="img/sertifikat2.jpg" alt="Sertifikat 2">
+                <p>Organisasi: Wakil Ketua BEM Fakultas Informatika</p>
+            </div>
+            <div class="certificate-card">
+                <img src="img/sertifikat3.jpg" alt="Sertifikat 3">
+                <p>Workshop Android Development</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2>Kontak</h2>
+        <p>Ingin berkolaborasi atau berdiskusi? Silakan hubungi saya melalui:</p>
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> muhamad.syaripudin@example.com</p>
+            <p><i class="fas fa-phone"></i> +62 812-3456-7890</p>
+            <p><i class="fab fa-linkedin"></i> <a href="#">LinkedIn Saya</a></p>
+        </div>
+        <a href="mailto:muhamad.syaripudin@example.com" class="btn-primary">Hubungi Sekarang</a>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Muhamad Syaripudin. All rights reserved.</p>
-        </div>
+        <p>© 2025 Muhamad Syaripudin. All rights reserved.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
